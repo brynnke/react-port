@@ -1,7 +1,7 @@
 # Portfolio powered by React!
 
 ## Description
-Module 20 challenge. Update portfolio to showcase my full stack web development projects. Includes six projects, about me tab, and ability to download my resume. 
+Update portfolio to showcase my full stack web development projects. Includes six projects, about me tab, and ability to download my resume. 
 
 ## Depoloyed link
 
