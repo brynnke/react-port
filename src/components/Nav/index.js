@@ -1,17 +1,16 @@
 import React, {useEffect} from "react";
-import { capitalizeFirstLetter } from "../../utilis/helpers.js";
+
 
 function Nav(props) {
     const {
-        catagories = ["About", "Contact", "Resume", "Portfolio"],
+        catagories = [],
         setCurrentCategory,
         currentCategory,
     } = props;
 
-    const handleClick = (item) => {
-        console.log(item);
-        return item;
-    };
+    useEffect(() => {
+        document.title= currentCategory.name
+    }, [currentCategory])
     
     return (
         <header className="flex-row px-1">
