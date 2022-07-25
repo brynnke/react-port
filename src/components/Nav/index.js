@@ -13,25 +13,8 @@ function Nav(props) {
     }, [currentCategory])
     
     return (
-        <header className="flex-row px-1">
-            <h2> 
-                <a data-testid="link" href="/">
-                    <span role='img' aria-label="flower">🌼 </span> Brynn Kiloran!
-                </a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-test-id="about" href="#about">
-                            ABOUT ME
-                        </a>
-                    </li>
-                    <li className={"mx-2"}>
-                        <span onClick={( )=> handleClick('Contact')}>
-                            CONTACT ME
-                        </span>
-                    </li>
-                    {catagories.map((category) => (
+        <ul className='nav-list'>
+                  {catagories.map((category) => (
                         <li
                         className={`mx-1 ${
                             currentCategory.name === category.name
@@ -42,13 +25,12 @@ function Nav(props) {
                                     setCurrentCategory(category);
                                 }}
                                 >
-                                    {capitalizeFirstLetter(category.name)}
+                                    {console.log(category.name)}
                                 </span>
                         </li>
                     ))}
                 </ul>
-            </nav>
-        </header>
+        
     );
 
 }
