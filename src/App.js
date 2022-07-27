@@ -1,14 +1,17 @@
-import React, {Component, useState} from "react";
+import React, { useState} from "react";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ContactForm from "./components/Contact";
+import Project from "./components/Project";
+
 
   function App() {
     const [categories] = useState([
       {name:'About'},
-      {name:'Portfolio'},
+      {name:'Project'},
       {name:'Resume'},
-      {name:'Contact'}
+      {name:'ContactForm'},
     ])
 const [currentCategory, setCurrentCategory] = useState(categories[0])
 
@@ -16,12 +19,12 @@ const renderComponent = () => {
   switch (currentCategory.name) {
     case "About":
     return <About/>
-    case "Portfolio":
-    return <h1>Portfolio</h1>
+    case "Project":
+    return <Project />
     case "Resume":
     return <h1>Resume</h1>
-    case "Contact":
-    return <h1>Contact</h1>
+    case "ContactForm":
+    return <ContactForm/>
     default: console.log("warning")
   }
 }

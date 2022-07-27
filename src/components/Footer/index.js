@@ -6,11 +6,16 @@ function Footer() {
         <div className="footer-div">
             <footer>
                 <ul>
-                    <a href="https://github.com/brynnke" target="blank">
+                    <a href="mailto:kiloranb@gmail.com" target="blank">
                         <li>
                         <i class="far fa-envelope"></i>
-                        </li>
-                    </a>
+                        </li> 
+                        </a>
+                    <a href="https://github.com/brynnke" target="blank">
+                        <li>
+                        <i class="fa-solid fa-code-branch"></i>
+                        </li>  
+                    </a>  
                 </ul>
             </footer>
         </div>
