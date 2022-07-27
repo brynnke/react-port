@@ -8,7 +8,7 @@ function Footer() {
                 <ul>
                     <a href="https://github.com/brynnke" target="blank">
                         <li>
-                           
+                        <i class="far fa-envelope"></i>
                         </li>
                     </a>
                 </ul>

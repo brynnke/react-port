@@ -1,5 +1,6 @@
 import React from "react";
 import imagesprofile from "../../assets/images/profile.jpg";
+import "./about.css";
 function About() {
     return (
         <section className="my-5">

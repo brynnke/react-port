@@ -1,35 +1,31 @@
-import React, {useEffect} from "react";
+import React from "react";
 
 
 function Nav(props) {
-    const {
-        catagories = [],
-        setCurrentCategory,
-        currentCategory,
-    } = props;
-
-    useEffect(() => {
-        document.title= currentCategory.name
-    }, [currentCategory])
-    
+    const tabs = ["About","Portfolio","Contact","Resume"];
+    console.log(props)
     return (
-        <ul className='nav-list'>
-                  {catagories.map((category) => (
+        <div className="tabs are-centered">
+              <ul className='nav nav-tabs'>
+        
+                  {props && props.categories.map((category) => (
                         <li
                         className={`mx-1 ${
-                            currentCategory.name === category.name
+                            props.currentCategory.name === category.name
                         }`}
                         key={category.name}>
                             <span 
                                 onClick={() => {
-                                    setCurrentCategory(category);
+                                    props.setCurrentCategory(category);
                                 }}
                                 >
-                                    {console.log(category.name)}
+                                    {category.name}
                                 </span>
                         </li>
                     ))}
                 </ul>
+        </div>
+      
         
     );
 
