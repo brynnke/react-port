@@ -4,6 +4,7 @@ import quiz from "../../assets/icons/quiz.jpg"
 import unleashed from "../../assets/icons/unleashed.jpg"
 import music from "../../assets/icons/music.jpg"
 import tech from "../../assets/icons/tech.jpg"
+import work from "../../assets/icons/work.jpg"
 
 
 function Project () {
@@ -45,7 +46,7 @@ const [projects] = useState([
     },
     {
         title: "Work Scheduler",
-        image: Worker,
+        image: work,
         github: "https://github.com/brynnke/work-day-sched",
         Deployment: "https://brynnke.github.io/work-day-sched/",
         alt: "Work day scheduler"
