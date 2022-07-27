@@ -56,7 +56,6 @@ const [projects] = useState([
 
 return (
     <div className='grid-container'>
-         {/* <h2 className='section-header'>Projects</h2> */}
         <div className='grid'>
           {projects.map(project => (
             <div className='project-container'>
