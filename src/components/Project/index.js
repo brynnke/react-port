@@ -51,7 +51,14 @@ const [projects] = useState([
         Deployment: "https://brynnke.github.io/work-day-sched/",
         alt: "Work day scheduler"
     },
-    
+    {
+    title: "DEI Calendar",
+    image: calendar,
+    github: "https://github.com/petehodnefield/project-three",
+    Deployment: "https://serene-mesa-60189.herokuapp.com/",
+    alt: "DEI Calendar app"
+},
+
 ])
 
 return (
