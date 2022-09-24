@@ -5,6 +5,7 @@ import unleashed from "../../assets/icons/unleashed.jpg"
 import music from "../../assets/icons/music.jpg"
 import tech from "../../assets/icons/tech.jpg"
 import work from "../../assets/icons/work.jpg"
+import calendar from "../../assets/icons/calendar.jpg"
 
 
 function Project () {
